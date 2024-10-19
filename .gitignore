@@ -30,3 +30,33 @@
 *.exe
 *.out
 *.app
+
+
+# Ignore build directory
+cmake-build-debug/
+
+# CMake-generated files
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+*.cmake
+*.cbp
+*.o
+*.o.d
+*.marks
+*.log
+*.yaml
+
+# Ignore output directory
+out/
+
+# CLion specific files
+clion-environment.txt
+clion-log.txt
+.idea/
+
+# Ignore temporary files
+*.tmp
+*.swp
+
