@@ -2,8 +2,8 @@
 // Search the max char and return the index
 // Search the min char in the string
 // Search the min char in the string
-#include "../utils/console.h"
-#include "../utils/cron.h"
+#include "console.h"
+#include "cron.h"
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -36,17 +36,17 @@ vector<T> order_vector_by_max(vector<T> v_param){
     return v;
 }
 
-int main(){
-    srand(time(0));
-    auto start = cronometer(START);
-    cout << "### STARTED - " << start;
-    std::vector<std::string> vector_rnd_str = load_vector_str<std::string>(1000);
-    printVectorInline(vector_rnd_str);
-    std::pair<int,string> result = get_max_and_index_from_vector(vector_rnd_str);
-    std::cout << "Max value: " << result.second << ", Index Position: " << result.first << std::endl;
-    vector<std::string> v_ordered = order_vector_by_max(vector_rnd_str);
-    printVectorInline(v_ordered);
-    auto end = cronometer(STOP);
-    cout << "### END - " << end;
-    return 0;
-}
+//int main(){
+//    srand(time(0));
+//    auto start = cronometer(START);
+//    cout << "### STARTED - " << start;
+//    std::vector<std::string> vector_rnd_str = load_vector_str<std::string>(1000);
+//    printVectorInline(vector_rnd_str);
+//    std::pair<int,string> result = get_max_and_index_from_vector(vector_rnd_str);
+//    std::cout << "Max value: " << result.second << ", Index Position: " << result.first << std::endl;
+//    vector<std::string> v_ordered = order_vector_by_max(vector_rnd_str);
+//    printVectorInline(v_ordered);
+//    auto end = cronometer(STOP);
+//    cout << "### END - " << end;
+//    return 0;
+//}

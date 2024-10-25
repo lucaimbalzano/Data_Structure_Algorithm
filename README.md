@@ -1,5 +1,8 @@
 # Data Structure & Algorithm
 
+
+O(N) complexity means the time needed for the algorithm to work increases step by step as the amount of data it processes gets bigger.
+
 <b> Compile single source file:</b>
 
 ```bash
